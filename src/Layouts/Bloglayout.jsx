@@ -4,17 +4,37 @@ import { NavLink, Outlet } from "react-router-dom";
 const Bloglayout = () => {
     return (
         <Container>
-            <header className="d-flex justify-content-between mt-2">
-                <div>
-                    <h1>TECHCRUNCH</h1>
+            <header className="header">
+            <nav className="navbar navbar-expand-lg navbar-dark mt-5">
+                <NavLink className="navbar-brand" href="#" >
+                    TECHCRUNCH
+                </NavLink>
+                    <button
+                    className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i className="fa-solid fa-robot fa-bounce"></i>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li className="nav-item ps-lg-3">
+                            <NavLink className="nav-link ps-lg-4" aria-current="page" href="#"
+                            >Home</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link ps-lg-5" to="#">About</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link ps-lg-5" to="/blog">Blog</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link ps-lg-5" to="#">Contact</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link ps-lg-5" to="#">News</NavLink>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <NavLink to="#" className="me-3">Home</NavLink>
-                    <NavLink to="blog" className="me-3">Blog</NavLink>
-                    <NavLink to="#" className="me-3">About</NavLink>
-                    <NavLink to="#" className="me-3">Contact</NavLink>
-                </div>
-            </header>
+            </nav>
+        </header>
             <main className="mt-4">
                 <Outlet />
             </main>
