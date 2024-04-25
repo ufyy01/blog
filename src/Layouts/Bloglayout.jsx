@@ -4,7 +4,7 @@ import { NavLink, Outlet } from "react-router-dom";
 const Bloglayout = () => {
     return (
         <Container>
-            <header className="header">
+            <header className="header mx-2">
             <nav className="navbar navbar-expand-lg navbar-dark mt-5">
                 <NavLink className="navbar-brand" href="#" >
                     TECHCRUNCH
@@ -35,7 +35,7 @@ const Bloglayout = () => {
                 </div>
             </nav>
         </header>
-            <main className="main mt-4">
+            <main className="main mt-4 mx-2">
                 <Outlet />
             </main>
         </Container>

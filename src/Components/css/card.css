@@ -17,6 +17,7 @@
 .first-card {
     background-color: white;
     border-radius: 10px;
+    width: 100%;
 }
 
 .first-card .card-img-top {
@@ -28,4 +29,16 @@
 .paginate {
     margin-top: 20px;
     width: 100%;
+}
+
+@media screen and (max-width:650px) {
+    .blogs .card {
+        flex: 0 0 100%;
+    }   
+    .first-card {
+        padding: 20px;
+    }
+    .first-card .card-img-top {
+        width: 100%;
+    }
 }

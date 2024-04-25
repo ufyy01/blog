@@ -4,7 +4,7 @@ import './css/card.css'
 const FirstCard = ({blog}) => {
     return (
         <div className="col-sm-12 col-md-12 col-lg-12">
-            <div className="first-card d-flex mx-auto mt-5 p-3">
+            <div className="first-card d-lg-flex mx-auto mt-5 p-lg-3">
                 <img className="card-img-top img-fluid" src={blog.yoast_head_json.og_image[0].url} alt="blog" />
                 <div className="card-body ms-3 w-100 d-flex flex-column justify-content-between">
                     <div className="about d-flex justify-content-between">
