@@ -35,7 +35,7 @@ const Bloglayout = () => {
                 </div>
             </nav>
         </header>
-            <main className="mt-4">
+            <main className="main mt-4">
                 <Outlet />
             </main>
         </Container>

@@ -1,12 +1,4 @@
-.blogs {
-    background-color: rgba(255, 255, 255, .1);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
-    border-radius: 50px;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-right: 2px solid rgba(255, 255, 255, .2);
-    border-bottom: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(10px);
-}
+
 .blogs .card {
     flex: 0 0 calc(92%/3);
     margin-top: 55px;
@@ -20,5 +12,20 @@
 
 .blogs .card .card-img-top {
     height: 300px;
+}
 
+.first-card {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.first-card .card-img-top {
+    width: calc(100%/2);
+    height: 400px;
+    border-radius: 10px;
+}
+
+.paginate {
+    margin-top: 20px;
+    width: 100%;
 }
