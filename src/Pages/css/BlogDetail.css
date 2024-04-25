@@ -1,0 +1,24 @@
+body {
+    color: white;
+    font-size: 18px;
+}
+
+a {
+    color: bisque;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.wp-caption img {
+    width: 48%;
+    height: 50%;
+}
+
+.bttn {
+    background-color: beige;
+    color: black;
+    font-weight: 700;
+}

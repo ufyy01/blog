@@ -5,10 +5,10 @@ const Pagination = ({ pageCount, handleClick}) => {
         <ReactPaginate 
             previousLabel={'<'}
             nextLabel={'>'}
-            breakLabel={'...'}
+            breakLabel={'..'}
             pageCount={pageCount}
-            marginPagesDisplayed={4}
-            pageRangeDisplayed={3}
+            marginPagesDisplayed={2}
+            pageRangeDisplayed={1}
             onPageChange={handleClick}
             containerClassName="pagination justify-content-center"
             pageClassName="page-item"

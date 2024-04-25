@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 body {
     position: relative;
-    background: linear-gradient(to bottom right,  #01438a 10%, #012950, #074b8f,  #012950, #002c5a) 100% no-repeat;
+    background: linear-gradient(to bottom right,  #eff2f5 10%, #012950, #074b8f,  #012950, #002c5a) 100% no-repeat;
     background-color: #313b46;
     height: 100%;
     background-size: 300% 500%;
     overflow-x: hidden;
-    animation: bg-ani 15s ease-in-out infinite;
-    background-attachment: fixed;
+    animation: bg-ani 10s ease-in-out infinite; 
+    font-family: "Quicksand", sans-serif;
 }
 @keyframes bg-ani { 
     0% {
@@ -24,4 +25,13 @@ body {
     border-right: 2px solid rgba(255, 255, 255, .2);
     border-bottom: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(10px);
+}
+.filler {
+    height: 90vh;
+}
+
+@media screen and (max-width:650px) {
+    body {
+        overflow-x: hidden;
+    }
 }
